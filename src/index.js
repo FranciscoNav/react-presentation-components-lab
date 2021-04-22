@@ -4,12 +4,12 @@ import ReactDOM from 'react-dom';
 import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
-handleClick = () => console.log('I was clicked')
+// handleClick = () => console.log('I was clicked')
 
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={this.handleClick()} />
+    <SimplerComponent handleClick={() => console.log ('I was clicked')} />
   </div>,
   document.getElementById('root')
 );
